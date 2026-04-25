@@ -1,0 +1,1 @@
+const faq=document.querySelector('.faq');if(faq){const items=[...faq.querySelectorAll('details')];items.forEach(item=>{const s=item.querySelector('summary');s?.setAttribute('aria-expanded',String(item.open));item.addEventListener('toggle',()=>{s?.setAttribute('aria-expanded',String(item.open));if(item.open)items.forEach(o=>o!==item&&(o.open=false))})})}
