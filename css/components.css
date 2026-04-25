@@ -2,6 +2,9 @@
 .nav-shell{margin-top:.7rem;border-radius:999px;padding:.55rem .9rem;display:flex;align-items:center;justify-content:space-between;gap:1rem}.nav-menu{display:none;gap:1rem;font-weight:500}
 .nav-actions{display:flex;gap:.6rem;align-items:center}.lang-switch{display:flex;gap:.4rem;font-size:.82rem}.menu-toggle{width:42px;height:42px;border-radius:999px;border:1px solid var(--border);background:#fff}
 .mobile-panel{position:fixed;inset:0;background:rgba(15,23,42,.95);display:none;padding:6rem 2rem 2rem;z-index:39}.mobile-panel.open{display:grid;align-content:start;gap:1rem}.mobile-panel a{color:#fff;font-size:1.2rem}
+.brand-mark{display:flex;align-items:center;gap:.7rem}
+.brand-logo{width:154px;height:34px;object-fit:cover;object-position:center;border-radius:6px}
+.brand-logo-hero{width:min(260px,55vw);height:58px;object-fit:cover;object-position:center;border-radius:10px;margin-bottom:1rem;background:rgba(255,255,255,.12);padding:.25rem}
 .btn{display:inline-flex;justify-content:center;align-items:center;gap:.5rem;border-radius:999px;padding:.8rem 1.2rem;font-weight:600;border:1px solid transparent;cursor:pointer;transition:.2s}.btn-primary{background:var(--brand-navy);color:#fff}.btn-light{background:#fff;color:var(--brand-navy)}.btn-outline{border-color:#fff;color:#fff;background:transparent}.btn-ghost{border-color:var(--border);background:#fff;color:var(--ink)}.btn-block{width:100%}
 .card{background:#fff;border:1px solid var(--border);border-radius:var(--radius-lg);padding:1.25rem;box-shadow:var(--shadow-sm)}.card-feature{display:flex;gap:.8rem;align-items:flex-start}.stat-card{font-weight:700;color:var(--ink)}
 .pricing-popular{transform:scale(1.03);border:2px solid var(--brand-navy);box-shadow:var(--shadow-lg)}.badge-pill{display:inline-block;padding:.28rem .66rem;border-radius:999px;background:var(--brand-pale);color:var(--brand-navy);font-size:.74rem;font-weight:700;margin-bottom:.8rem}
@@ -12,4 +15,12 @@ input[type='range']{width:100%;accent-color:var(--brand-blue)}.toggle-group{disp
 .comparison-wrap{overflow:auto;border:1px solid var(--border);border-radius:var(--radius-lg)}table{width:100%;border-collapse:collapse;background:#fff}th,td{padding:.8rem;border-bottom:1px solid var(--border);text-align:left}thead th{position:sticky;top:0;background:#f1f5f9}.col-netzvolt{background:var(--brand-navy);color:#fff;font-weight:600}
 .faq details{border:1px solid var(--border);border-radius:12px;padding:1rem;background:#fff}.faq details+details{margin-top:.8rem}.faq summary{font-weight:600;color:var(--ink);cursor:pointer}
 .banner{background:var(--brand-pale);color:var(--brand-navy);padding:1rem;border-radius:14px;font-weight:600;margin-top:1rem}.waitlist-inline{display:grid;grid-template-columns:1fr;gap:.75rem;max-width:720px;margin:1.5rem auto 0}
+.investor-strip{display:grid;grid-template-columns:1fr;gap:.85rem;margin-top:1.2rem}
+.investor-kpi{background:#fff;border:1px solid var(--border);border-radius:14px;padding:1rem}
+.investor-kpi strong{display:block;font-size:1.45rem;color:var(--ink);line-height:1.1}
+.investor-grid{display:grid;grid-template-columns:1fr;gap:1rem}
+.investor-list li{margin:.45rem 0;display:flex;gap:.5rem}
+.investor-list li::before{content:'•';color:var(--brand-blue);font-weight:700}
 @media (min-width:1024px){.nav-menu{display:flex}.menu-toggle{display:none}.calc-grid{grid-template-columns:1fr 1fr}.waitlist-inline{grid-template-columns:2fr auto}}
+@media (min-width:640px){.investor-strip{grid-template-columns:repeat(3,minmax(0,1fr))}}
+@media (min-width:1024px){.investor-grid{grid-template-columns:repeat(2,minmax(0,1fr))}}
